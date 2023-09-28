@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>YiYang Lu ISP PA1</title>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <script src="main.js"></script> 
+    </head>
+
+    <body>         
+
+        <img id="image" src="html.png" alt="html icon" width="50">
+        <div id="information"> 
+            <h3>
+                YiYang(Steven) Lu &emsp;
+                Finish Date: Wed Sep 20 2023 &emsp;
+                Current time: <span id = "currentTime"></span><br>
+                Browser Information: <span id = "BrowserInfo"></span>
+            </h3>
+
+            <p>
+                Factorial Calculator: <input type="text" id="numberInput">
+                <button onclick="calculateFactorial()">Calculate</button>
+                <span id = "answer"></span>
+            </p>
+
+            <video id = "myVideo" controls="controls">
+                <source src="VideoExplaining.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+        <!-- <img id="image" src="html.png" alt="html icon" width="50"> -->
+        
+        <script>
+            document.getElementById("currentTime").textContent = getCurrentTime();
+            document.getElementById("BrowserInfo").textContent = getBrowserInformation();
+            var container = document.querySelector("body");
+            container.addEventListener("click", getClickPosition, false);
+            const imageoriginx = document.getElementById("image").offsetLeft;
+            const imageoriginy = document.getElementById("image").offsetTop;
+        </script>
+
+    </body>
+</html>

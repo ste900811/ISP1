@@ -1,0 +1,28 @@
+body {
+    background-color: #ffffff;
+    cursor: pointer;
+    width: 95vw;
+    height: 95vh;
+}
+
+p {
+    color:rgb(0, 0, 0);
+    font-family: verdana;
+    font-size: 20px;
+}
+
+input {
+    width: 50px;
+}
+
+video {
+    width: 500px;
+}
+
+#image {
+    position: relative;
+    left: 1vw;
+    top: 1vh;
+    transition: left .5s ease-in, top .5s ease-in;
+    z-index: -1;
+}
